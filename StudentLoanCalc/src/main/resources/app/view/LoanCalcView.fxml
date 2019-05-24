@@ -54,6 +54,7 @@
                         <Label text="Additional Payment" GridPane.rowIndex="4" />
                         <TextField fx:id="InterestRate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <TextField fx:id="NbrOfYears" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="AdditionalPayment" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <DatePicker fx:id="PaymentStartDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                      </children>
                   </GridPane>
@@ -70,7 +71,9 @@
                      <children>
                         <Label text="Total Payments" />
                         <Label text="Total Interest" GridPane.rowIndex="1" />
-                        <Label fx:id="lblTotalPayemnts" prefHeight="18.0" prefWidth="174.0" GridPane.columnIndex="1" />
+                        <Label GridPane.columnIndex="1" />
+                        <Label fx:id="lblTotalInterest" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="lblTotalPayments" GridPane.columnIndex="1" />
                      </children>
                   </GridPane>
                </children>
@@ -79,7 +82,7 @@
                <children>
                   <TableView prefHeight="231.0" prefWidth="815.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="Payment #" />
+                      <TableColumn fx:id="period" prefWidth="75.0" text="Payment #" />
                       <TableColumn prefWidth="114.0" text="Due Date" />
                         <TableColumn prefWidth="85.0" text="Payment" />
                         <TableColumn prefWidth="140.0" text="Additonal Payment" />
